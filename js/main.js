@@ -60,7 +60,7 @@ function SetFilesNeeded(needed) {
   }
 }
 
-function DownloadingFile(filename) {
+/* function DownloadingFile(filename) {
   filename = filename.replace("'", "").replace("?", "");
   debug("DownloadingFile called '" + filename + "'");
   downloadingFileCalled = true;
@@ -83,7 +83,7 @@ function DownloadingFile(filename) {
       $(this).remove();
     });
   }, 5000); // 5000 ms (5 secondes) avant de supprimer l'élément
-}
+} */
 
 
 
@@ -217,7 +217,7 @@ $(document).ready(function() {
 
       
 
-      SetStatusChanged("Téléchargement..");
+      /* SetStatusChanged("Téléchargement.."); */
     }
   }, 1000);
 });
