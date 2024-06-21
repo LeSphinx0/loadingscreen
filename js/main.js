@@ -116,10 +116,10 @@ function loadAll() {
 
   // first time loading if DownloadingFile isn't called after some time
   setTimeout(function() {
-    debug("Checking if first time loading.. " + downloadingFileCalled);
+    debug("Vérification du chargement... " + downloadingFileCalled);
     if (downloadingFileCalled) {
       announce(
-        "This is your first time loading please wait for the files to download",
+        "Veuillez attendre que les fichiers soient téléchargés.",
         true
       );
     }
@@ -183,7 +183,7 @@ $(document).ready(function() {
   // if it isn't loaded by gmod load manually
   setTimeout(function() {
     if (!isGmod) {
-      debug("No Garry's mod testing..");
+      debug("Pas de test de Garry's Mod..");
       isTest = true;
       loadAll();
 
@@ -208,7 +208,7 @@ $(document).ready(function() {
         }
       }, 500);
 
-      SetStatusChanged("Testing..");
+      SetStatusChanged("Téléchargement..");
     }
   }, 1000);
 });
