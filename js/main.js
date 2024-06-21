@@ -88,30 +88,28 @@ function DownloadingFile(filename) {
 
 
 var allow_increment = true;
-var statusCounter = 1;
-
 function SetStatusChanged(status) {
   debug("SetStatusChanged called '" + status + "'");
-
-  // Récupère ou crée un élément pour afficher le statut
-  var statusElement = $('#status-line');
-
-  // Met à jour le texte du statut
-  statusElement.text('Addon ' + statusCounter + ': ' + status);
-  
-  // Incrémente le compteur pour le prochain addon
-  statusCounter++;
-
-  // Animation pour faire apparaître le statut
-  statusElement.stop(true, true).fadeIn().delay(3000).fadeOut();
-
-  // Met à jour le chargement si nécessaire
+  $("#history").prepend('<div class="history-item">' + status + "</div>");
+  $(".history-item").each(function(i, el) {
+    if (i > 10) {
+      $(el).remove();
+    }
+    $(el).css("opacity", "" + 1 - i * 0.1);
+  });
   if (status === "Workshop Complete") {
+    allow_increment = false;
     setLoad(80);
   } else if (status === "Client info sent!") {
+    allow_increment = false;
     setLoad(95);
   } else if (status === "Starting Lua...") {
     setLoad(100);
+  } else {
+    if (allow_increment) {
+      percentage = percentage + 0.1;
+      setLoad(percentage);
+    }
   }
 }
 
