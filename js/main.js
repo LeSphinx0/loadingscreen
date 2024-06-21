@@ -88,7 +88,7 @@ function SetFilesNeeded(needed) {
 
 
 
-var allow_increment = true;
+/* var allow_increment = true;
 function SetStatusChanged(status) {
   debug("SetStatusChanged called '" + status + "'");
   $("#history").prepend('<div class="history-item">' + status + "</div>");
@@ -112,7 +112,7 @@ function SetStatusChanged(status) {
       setLoad(percentage);
     }
   }
-}
+} */
 
 /**
  * External Functions
