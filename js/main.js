@@ -63,18 +63,25 @@ function DownloadingFile(filename) {
   filename = filename.replace("'", "").replace("?", "");
   debug("DownloadingFile called '" + filename + "'");
   downloadingFileCalled = true;
-  // Ajouter le nouveau fichier en bas de la liste
-  $("#history").append('<div class="history-item">' + filename + "</div>");
-  // Conserver seulement les 10 derniers éléments
-  var items = $(".history-item");
-  if (items.length > 10) {
-    items.first().remove(); // Supprimer le premier élément (le plus ancien)
-  }
-  // Appliquer une opacité décroissante inversée aux éléments restants
-  items.each(function (i, el) {
-    var opacity = 1 - (items.length - i - 1) * 0.1; // Inverser l'opacité
-    $(el).css("opacity", "" + opacity);
-  });
+
+  // Crée un nouvel élément pour afficher le fichier en cours de téléchargement
+  var currentDownloadItem = $('<div class="history-item">' + filename + "</div>");
+
+  // Ajoute le nouvel élément en haut de #history (première ligne)
+  $("#history").prepend(currentDownloadItem);
+
+  // Cache tous les autres éléments d'historique pour ne montrer que le premier (dernier téléchargé)
+  $(".history-item").not(currentDownloadItem).hide();
+
+  // Animation pour faire apparaître le nouvel élément
+  currentDownloadItem.fadeIn();
+
+  // Supprime l'élément le plus ancien après un certain délai (par exemple, 5 secondes)
+  setTimeout(function() {
+    currentDownloadItem.fadeOut(function() {
+      $(this).remove();
+    });
+  }, 5000); // 5000 ms (5 secondes) avant de supprimer l'élément
 }
 
 
@@ -204,6 +211,8 @@ $(document).ready(function() {
           DownloadingFile("Filename " + needed);
         }
       }, 500); */
+
+      
 
       SetStatusChanged("Téléchargement..");
     }
