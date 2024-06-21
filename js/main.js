@@ -1,4 +1,4 @@
-"use sctrict";
+"use strict";
 
 var isGmod = false;
 var isTest = false;
@@ -6,6 +6,7 @@ var totalFiles = 50;
 var totalCalled = false;
 var downloadingFileCalled = false;
 var percentage = 0;
+var statusIndex = 1; // Index pour suivre l'ordre des statuts
 
 /**
  * Gmod Called functions
@@ -58,7 +59,6 @@ function SetFilesNeeded(needed) {
   }
 }
 
-var fileCount = 0;
 function DownloadingFile(filename) {
   filename = filename.replace("'", "").replace("?", "");
   debug("DownloadingFile called '" + filename + "'");
