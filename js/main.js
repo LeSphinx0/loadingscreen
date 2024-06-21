@@ -196,7 +196,7 @@ $(document).ready(function() {
         "Gamemode"
       );
 
-      var totalTestFiles = 100;
+      /* var totalTestFiles = 100;
       SetFilesTotal(totalTestFiles);
 
       var needed = totalTestFiles;
@@ -206,7 +206,7 @@ $(document).ready(function() {
           SetFilesNeeded(needed);
           DownloadingFile("Filename " + needed);
         }
-      }, 500);
+      }, 500); */
 
       SetStatusChanged("Téléchargement..");
     }
