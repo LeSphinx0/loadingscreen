@@ -13,6 +13,7 @@ var statusIndex = 1; // Index pour suivre l'ordre des statuts
  */
 function GameDetails(
   servername,
+  serverurl,
   mapname,
   maxplayers,
   steamid,
@@ -195,6 +196,8 @@ $(document).ready(function() {
 
       GameDetails(
         "Servername",
+        "Serverurl",
+        "",
         "Maxplayers",
         "SteamID",
         "Gamemode"
