@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript">
+    document.write(
+      '<link rel="stylesheet" href="css/main.css?' + Math.random() + '">'
+    );
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed|Ubuntu+Mono&display=swap" rel="stylesheet">
+  <title>Loading Screen | By Ferty</title>
+</head>
+<body>
+  <div class="background">
+    <img src="images/327th.png" class="carousel-image" alt="Image 2">
+    <img src="images/501stv1.png" class="carousel-image" alt="Image 3">
+    <img src="images/501stv2.png" class="carousel-image" alt="Image 4">
+    <img src="images/ctblanc.png" class="carousel-image" alt="Image 5">
+    <img src="images/fordo.png" class="carousel-image" alt="Image 6">
+  </div>
+  <div class="overhaul"></div>
+
+  <nav>
+    <div id="announcement"></div>
+    <span id="map">Vous jouez sur </span>
+    <span id="steamid"></span>
+  </nav>
+
+  <div id="history"></div> 
+
+  <main>
+    <div class="title">
+      <h2>Bienvenue sur,</h2>
+      <h1 id="title"></h1>
+    </div>
+    <div class="under-nav"></div>
+    <div class="loading-box"></div>
+  </main>
+
+  <script src="js/lib/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+    document.write(
+      '<script src="js/config.js?' + Math.random() + '"><\/script>'
+    );
+    document.write(
+      '<script src="js/main.js?' + Math.random() + '"><\/script>'
+    );
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      let currentImageIndex = 0;
+      const images = document.querySelectorAll('.carousel-image');
+      const totalImages = images.length;
+    
+      function changeImage() {
+        images[currentImageIndex].classList.remove('active');
+        currentImageIndex = (currentImageIndex + 1) % totalImages;
+        images[currentImageIndex].classList.add('active');
+      }
+    
+      setInterval(changeImage, 4000); // Change image every 4 seconds
+    });
+  </script>
+</body>
+</html>
