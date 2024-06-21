@@ -190,7 +190,7 @@ $(document).ready(function() {
       GameDetails(
         "Servername",
         "Serverurl",
-        "Mapname",
+        "",
         "Maxplayers",
         "SteamID",
         "Gamemode"
