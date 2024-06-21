@@ -39,16 +39,6 @@ h1 {
   text-align: center;
 }
 
-#history {
-  position: absolute;
-  bottom: 8%;
-  right: 6.5%;
-  text-align: center;
-  margin: 10px;
-  color: rgb(240, 240, 240);
-  text-shadow: none;
-}
-
 .background {
   z-index: -2;
   width: 100%;
