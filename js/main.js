@@ -117,7 +117,7 @@ function SetStatusChanged(status) {
 /**
  * External Functions
  */
-function loadAll() {
+/* function loadAll() {
   $("nav").fadeIn();
   $("main").fadeIn();
 
@@ -131,7 +131,7 @@ function loadAll() {
       );
     }
   }, 10000);
-}
+} */ 
 function loadBackground() {
   if (Config.backgroundImage) {
     $(".background").css(
@@ -155,12 +155,12 @@ function announce(message, ispermanent) {
     permanent = true;
   }
 }
-function debug(message) {
+/* function debug(message) {
   if (Config.enableDebug) {
     console.log(message);
     $("#debug").prepend(message + "<br>");
   }
-}
+} */
 
 /**
  * Initial function
