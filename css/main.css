@@ -92,7 +92,7 @@ h1 {
   left: 0;
   bottom: 0;
   position: absolute;
-  width: 75%;
+  width: 80%;
   height: 3%;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -101,7 +101,7 @@ h1 {
   right: 0;
   bottom: 0;
   position: absolute;
-  width: 25%;
+  width: 20%;
   height: 8.5%;
   background-color: rgba(0, 0, 0, 0.5);
 }
