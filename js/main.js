@@ -12,7 +12,6 @@ var percentage = 0;
  */
 function GameDetails(
   servername,
-  serverurl,
   mapname,
   maxplayers,
   steamid,
@@ -189,8 +188,6 @@ $(document).ready(function() {
 
       GameDetails(
         "Servername",
-        "Serverurl",
-        "",
         "Maxplayers",
         "SteamID",
         "Gamemode"
