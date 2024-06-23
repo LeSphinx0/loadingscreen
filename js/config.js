@@ -35,17 +35,17 @@ Config.announceMessages = [
   "Amusez-vous bien !",
   "Rappelez-vous : respectez les autres joueurs !",
   "Besoin d'aide ? Contactez un admin en jeu !",
-  "Merci à Ferty pour ce superbe Loading Screen !",
   "Vous êtes perdus sur quelque chose ? Rejoignez notre discord.",
   "Faite appel au staff en faisant un ticket en jeu, au besoin !",
-  "N'oubliez pas, ceci est un SeriousRP !"
+  "N'oubliez pas, ceci est un SeriousRP !",
+  "Faites attention à vos tirs...."
 ];
 
 /**
  * How many miliseconds for each announcement?
  * only works if enableAnnouncements = true
  */
-Config.announcementLength = 3000; /* des fois que j'ai cassé le truc comme ça */ 
+Config.announcementLength = 3500; /* des fois que j'ai cassé le truc comme ça */ 
 
 /**
  * Image Filename
