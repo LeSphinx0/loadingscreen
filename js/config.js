@@ -45,7 +45,7 @@ Config.announceMessages = [
  * How many miliseconds for each announcement?
  * only works if enableAnnouncements = true
  */
-Config.announcementLength = 2700;
+Config.announcementLength = 3000; /* des fois que j'ai cassé le truc comme ça */ 
 
 /**
  * Image Filename
