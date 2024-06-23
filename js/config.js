@@ -5,7 +5,7 @@ var Config = {};
  * What should the text in the center of the screen be?
  * if empty it will fill in your Server Name
  */
-Config.title = "";
+Config.title = "Orion - CloneWars";
 
 /**
  * Enable map text in the top left corner of the screen?
@@ -35,14 +35,17 @@ Config.announceMessages = [
   "Amusez-vous bien !",
   "Rappelez-vous : respectez les autres joueurs !",
   "Besoin d'aide ? Contactez un admin en jeu !",
-  "Merci à Ferty pour ce superbe Loading Screen !"
+  "Merci à Ferty pour ce superbe Loading Screen !",
+  "Vous êtes perdus sur quelque chose ? Rejoignez notre discord.",
+  "Faite appel au staff en faisant un ticket en jeu, au besoin !",
+  "N'oubliez pas, ceci est un SeriousRP !"
 ];
 
 /**
  * How many miliseconds for each announcement?
  * only works if enableAnnouncements = true
  */
-Config.announcementLength = 3000;
+Config.announcementLength = 2700;
 
 /**
  * Image Filename
