@@ -10,7 +10,7 @@
     );
   </script>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed|Ubuntu+Mono&display=swap" rel="stylesheet">
-  <title>Loading Screen | By Ferty</title>
+  <title>Orion - Chargement [Serveur Passif]</title> <!-- Je t'aime bien Ferty mais si ça apparaît vaut mieux que ce soit la commu -->
 </head>
 <body>
   <div class="background">
@@ -24,8 +24,8 @@
 
   <nav>
     <div id="announcement"></div>
-    <span id="map">Map actuelle du serveur : </span>
-    <span id="steamid">Votre SteamID64 : </span>
+    <span id="map">Map actuelle du serveur : </span> <!-- Meilleure indication que "vous jouez sur.." -->
+    <span id="steamid">Votre SteamID64 : </span> <!-- On dirait que ça ne s'affiche pas correctement ? chelou. -->
   </nav>
 
   
@@ -40,9 +40,9 @@
   </main>
 
   <div id="floating-image" class="coin"></div>
-  <img id="easteregg" src="images/loutre.png" alt="Easter Egg">
+  <img id="easteregg" src="images/loutre.png" alt="Easter Egg"> <!-- Est-ce que c'est VRAIMENT nécessaire... ;-; -->
 
-  <script src="js/lib/jquery-3.4.1.min.js"></script>
+  <script src="js/lib/jquery-3.4.1.min.js"></script> <!-- Récupération de la lib -->
   <script type="text/javascript">
     document.write(
       '<script src="js/config.js?' + Math.random() + '"><\/script>'
@@ -64,7 +64,7 @@
         images[currentImageIndex].classList.add('active');
       }
     
-      setInterval(changeImage, 4000); // Change image every 4 seconds
+      setInterval(changeImage, 7000); // Temps de changement en ms. J'ai aggrandi pour qu'on puisse profiter des screens 
     });
   </script>
 </body>
