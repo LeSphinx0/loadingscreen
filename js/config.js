@@ -27,8 +27,15 @@ Config.enableAnnouncements = true;
  * only works if enableAnnouncements = true
  */
 Config.announceMessages = [
-  "Bon jeu !",
-  "Ce Loading Screen a été réalisé par Ferty"
+  "Bienvenue sur notre serveur !",
+  "Profitez de votre expérience de jeu !",
+  "N'oubliez pas de lire nos règles sur le forum !",
+  "Rejoignez notre Discord pour rester informé !",
+  "Merci d'être parmi nous !",
+  "Amusez-vous bien !",
+  "Rappelez-vous : respectez les autres joueurs !",
+  "Besoin d'aide ? Contactez un admin en jeu !",
+  "Merci à Ferty pour ce superbe Loading Screen !"
 ];
 
 /**
